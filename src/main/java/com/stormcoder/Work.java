@@ -21,7 +21,9 @@ public class Work {
             sqlSessionFactory = new SqlSessionFactoryBuilder().build(reader);
             subscriberMapper = sqlSessionFactory.openSession().getMapper(SubscriberMapper.class); //Создаем маппер, из которого и будем вызывать методы getSubscriberById и getSubscribers
             List<Subscriber> subscribers = subscriberMapper.getSubscribers();
-//            Subscriber subscriber = subscriberMapper.getSubscriberById(101);
+            System.out.println(subscribers);
+            Subscriber subscriber = subscriberMapper.getSubscriberById(101);
+            System.out.println(subscriber);
         } catch (IOException e) {
             e.printStackTrace();
         }

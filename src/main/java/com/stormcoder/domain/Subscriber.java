@@ -3,17 +3,17 @@ package com.stormcoder.domain;
 import java.util.List;
 
 public class Subscriber {
-    private Long id;
+    private Long userId;
     private String name;
     private Tariff tariff;
     private List<Payment> payments;
 
-    public Long getId() {
-        return id;
+    public Long getUserId() {
+        return userId;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public void setUserId(Long userId) {
+        this.userId = userId;
     }
 
     public String getName() {

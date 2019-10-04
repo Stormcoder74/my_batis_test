@@ -20,8 +20,8 @@
         </environment>
     </environments>
     <mappers><!--в данном блоке необходимо описать маперы, которые используются в проекте-->
-        <mapper class="com.stormcoder.mapper.SubscriberMapper"/>
-<!--        <mapper class="com.stormcoder.mapper.TariffMapper"/>-->
-<!--        <mapper class="com.stormcoder.mapper.PaymentMapper"/>-->
+        <mapper resource="com/stormcoder/mappers/SubscriberMapper.xml"/>
+        <mapper resource="com/stormcoder/mappers/TariffMapper"/>
+        <mapper resource="com/stormcoder/mappers/PaymentMapper"/>
     </mappers>
 </configuration>
